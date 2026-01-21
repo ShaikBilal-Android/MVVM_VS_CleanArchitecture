@@ -32,7 +32,7 @@ class UserAdapter: RecyclerView.Adapter<UserAdapter.userVH>() {
         val bind = user[position]
         holder.binding.imgUser.setImageResource(R.drawable.ic_launcher_foreground)
         holder.binding.tvName.text = "Name : ${bind.name}"
-        holder.binding.tvAge.text = "Experience : ${bind.age}"
+        holder.binding.tvAge.text = "Age : ${bind.age}"
     }
 
     override fun getItemCount()= user.size
